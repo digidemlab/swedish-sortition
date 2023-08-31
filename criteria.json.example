@@ -1,0 +1,64 @@
+{
+    "gender": {
+        "values": {
+            "man": 35,
+            "woman": 35
+        },
+        "weight": 1
+    },
+    "age_group": {
+        "values": {
+            "15-24": 14,
+            "25-34": 16,
+            "35-44": 9,
+            "45-54": 9,
+            "55-64": 8,
+            "65-74": 7,
+            "75+": 7
+        },
+        "weight": 3
+    },
+    "education": {
+        "values": {
+            "University": 28,
+            "High school": 30,
+            "No education": 12
+        },
+        "weight": 1
+    },
+    "region": {
+        "values": {
+            "Stockholm": 16,
+            "Uppsala": 3,
+            "Södermanland": 2,
+            "Östergötland": 3,
+            "Jönköping": 2,
+            "Kronoberg": 1,
+            "Kalmar": 2,
+            "Gotland": 1,
+            "Blekinge": 1,
+            "Skåne": 9,
+            "Halland": 2,
+            "Västra Götaland": 11,
+            "Värmland": 2,
+            "Örebro": 2,
+            "Västmanland": 2,
+            "Dalarna": 2,
+            "Gävleborg": 2,
+            "Västernorrland": 2,
+            "Jämtland": 1,
+            "Västerbotten": 2,
+            "Norrbotten": 2
+        },
+        "weight": 4
+    },
+    "housing_type": {
+        "values": {
+            "apartment": 28,
+            "house": 16,
+            "shared": 20,
+            "other": 6
+        },
+        "weight": 1
+    }
+}

@@ -1,0 +1,6 @@
+personnummer==3.0.4
+mimesis==11.1.0
+pgeocode==0.4.0
+pandas==2.1.0
+xlsxwriter==3.1.2
+numpy==1.25.1
