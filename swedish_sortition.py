@@ -41,11 +41,6 @@ class Sortition(object):
         self.size = size
         self.max_distance = max_distance
 
-# """ - max_distance : str
-#     A threshold above which the function ends before completing the calculation
-#     in order to optimise the script running time
-#     """
-
     def decompose_for_criterium(self, sample: pd.DataFrame, criterium: str):
         """This function computes and returns 4 series of values for a given criterium
 

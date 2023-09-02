@@ -89,6 +89,10 @@ interested, already_confirmed = [part[1] for part in people.groupby('is_confirme
 sortition.generate_samples(1000000, 'complementary_lottery', interested, already_confirmed)
 ```
 
+## Multiprocessing
+
+In [run_parallel.py](/run_parallel.py), the sortition is run in parallel on all but one of the computer's cores. This can significantly speed up the calculations if you are not running a version of Python that supports multiprocessing out of the box.
+
 ## License
 
 This code is licensed as AGPLv3. Feel free to use it and don't hesitate to reach out to help us improve it!
