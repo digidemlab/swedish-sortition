@@ -1,0 +1,13 @@
+[project]
+name = "swedish-sortition"
+version = "0.1.0"
+description = "The algorithm used to perform the lottery of the first citizens' assembly in Sweden"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mimesis==18.0.0",
+    "numpy==2.3.0",
+    "pandas==2.3.0",
+    "pgeocode==0.5.0",
+    "xlsxwriter==3.2.5",
+]

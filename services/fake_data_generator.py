@@ -13,7 +13,7 @@ EDUCATION_TYPES = ['No education', 'High school', 'University']
 def get_random_person():
     fake_person = Person(Locale.SV)
 
-    gender = fake_person.gender(iso5218 = True)
+    gender = fake_person.gender_code()
     # In this version, we only support generation of binary people :/
     if gender == 1:
         gender = 'man'

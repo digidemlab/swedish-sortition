@@ -1,6 +1,6 @@
+from itertools import cycle
 from random import randrange
 from datetime import datetime, timedelta
-from personnummer import personnummer
 from datetime import date
 
 def get_random_personnummer(
@@ -14,7 +14,7 @@ def get_random_personnummer(
     random_two_numbers = "{n:02d}".format(n = randrange(0, 100))
     random_gender_number = _random_int(gender)
     eleven_first_numbers = f'{date_numbers}{random_two_numbers}{random_gender_number}'
-    control_number = personnummer.luhn(eleven_first_numbers[2:])
+    control_number = _luhn(eleven_first_numbers[2:])
 
     return f'{eleven_first_numbers}{control_number}'
 
@@ -30,6 +30,16 @@ def get_age(personnummer):
         age -= 1
 
     return age
+
+def _luhn(payload):
+    calc = [
+        p - 9 if p > 9 else p
+        for p in [
+            int(n) * m for n, m in zip(reversed(payload), cycle([2, 1]))
+        ]
+    ]
+    s = sum(calc)
+    return (10 - s) % 10
 
 def _str_to_date(date_string: str):
     return datetime.strptime(date_string, '%Y%m%d')
